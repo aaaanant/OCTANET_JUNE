@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows</title>
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="netflix1280.css">
+    <link rel="stylesheet" href="netflixmedia.css">
+    <script defer src="netflix.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png">
+</head>
+<body>
+  
+   <!-- Header (Include Position)-->
+   <header> 
+    <!-- Nav Bar -->
+    <nav>
+    <!-- Netflix Logo -->
+        <img src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460">
+    <!-- Language Option With Sign Out Button-->
+    <div  id="select-option">
+            <select>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Spanish</option>
+                <option>German</option>
+            </select>
+        <button>SignOut</button>
+    </div>  <!-- End of Div, Language Option With Sign Out Button-->
+    </nav>  <!-- End of Nav Bar-->
+
+    <!-- Header Content -->
+     <!-- Shows Heading -->
+    <div id="shows">
+    <h1>Unlimited movies, TV<br> shows and more</h1>
+    </div>  <!-- End of Show heading Div Container -->
+     <!-- Start line (Paragraph)-->
+    <div id="starts">
+        <p class=" default-ltr-cache-lwezpj euy28770">Starts at ₹149. Cancel at any time.</p>
+    </div>  <!-- End of Starts Div-->
+    <!-- Restart MemberShip Button -->
+    <div id="restart-membership">
+        <button onclick="window.location.href='https:/www.netflix.com/signup?locale=en-IN'">Restart Your Membership <i class="fa-solid fa-greater-than" style="font-size: 15px; padding-left: 10px;" style="color: #ffffff;"></i></button>
+    </div> <!--Reatart membership div container End-->
+
+</header> <!-- End of header and with background Image -->
+
+<!-- Main Content Start -->
+ <!-- Trending Section Start-->
+<div id="trending">
+     <!-- Trending Heading -->
+    <div id="trending-box">
+    <h2>Trending Now</h2> 
+</div> <!-- End of trending div -->
+
+<!-- Countries Selection -->
+    <select>
+        <option>India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        <option>Global</option>
+    </select>
+    <!-- Movies Selection -->
+    <select> 
+    <option>Movies</option>
+    <option>Tv Shows</option>
+</select>  <!-- End of Countries Selection -->
+
+
+<!-- Movies Rows (with Javascript) -->
+<!-- Images -->
+ <div id="images">
+<ul>   
+    <button onclick="leftMove()" id="leftButton"><</button> <!-- Left Side Button with Block Div, and Id for Css-->
+    <!-- List of images -->
+    <li >
+    <img class="list-image-1" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABb4K_k0nTiCOqn8St11FXBo6tciPjeakB1tDwR32f9iY_96_BV106LtVWsMNjmdaGaprSf_34rFJCKfp3VaDjhTXuL0WmGAqBkn5AuVGJLR8jTXAa6ouIYIf5Ku0q2c-jpaHEZj3ChtYn4ZCZMIBoastvIw6mAl69HCyRhxP_OUFf_ahq2FV6ZsPqgE01FwpzMkB_Z3Vf3btCqlCb2RzRJjtSATt4Pv-PFjLr8Ij1zMvSeWc4Ir3Qoww3S1UscpKUFrtQ-GUU9LkB13H-95wmCp6eoRv0crXpYJ75vAf2HyNTYo-8D2jliiXPDVNgDUzewFybnPEHDfQjaH6BOoJZh8.webp?r=d99">    
+    </li>
+    <li>
+    <img class="list-image-2" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTEtqjHHfe8loFkpCoIBeI8vRecGVDw4sCrt-8gpHoudVcPAPIMzR_oKJnEpuS2a4lPE-43wHMeyJpYmMyOg8LX8uHkU10iiU_w-9GDbZJXJJweiQrgS-DcmvzcieILNe1RU4fXw71TOPbZjoSJnU92KTgSew5HIfmXQNKOWFc7J2o0alQZBDDdr5k96sGspGrfePylDZZyVhIoTFI-mFKlxXmPh0YmJ42AHmin_mRG0x3T1FW_F1czf0aR55cKfLH0UdF53IPsr9K0S5xd-NCmQAcyjpY4GcxUO0ul7_5jI3ljnMhelRiytwF4dzEeA6Onucua3TFFH2sCpPn_QD6g.webp?r=f35">    
+    </li>
+    <li>
+    <img class="list-image-3" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaUW08atQKRxJD6twRRlYlvwKsV2xd-Sr5FI9j9A3fhErDfs_Kckf5TLr7I9HzllC1aLJuUOzIY2SW5ZVAk2JfXZ6VJ1n4aYibyekTbv2Vhbep_tQhkSJ4EnYhe9hD0otF81K2ibyqEgdrCVd5n0xbeUnf-9hCjC-hnx9YWaZ0WsnI_UGeNF-J-ODGLTD-5dA8hCW1fsGwxfbQzGHjeWoJdNNa7vDN6k5oxlFZ4Spsjy9F9JY2e5B_9sOzZf16Q3ded-dsA3Qr3wp1y3JSKLiy_a5E3-BMVbMY6aXQKHi1tW4YzqpIa-Y4IVAWoy48eChae1J0rMGL8D_qzsxBDQ7I0.webp?r=285">    
+    </li>
+    <li >
+    <img class="list-image-4" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdyAQXVj3y3eHGaa6qX49v0_aVBVjPHYQmvId3IBsKCdeeFwTDJ0SK1Bv9QkHoMuHWujjtBvzQm8G_ruZT7Zp7pwJ7QMzjwCqHqWUHMuR-NRG3CZo1vacdO_tbJ9sOlb8yFCCxJSlQNu7ZYw0kVIrXH0fbZy3bPptCbQ7c2f9cHh2M82hvL2HuRF5fzJZcoX9S3iACARGV6BdibkfV69aDvmH8wi1tBOH4ohj4vNF_Ih4SZEUVMsZz0vqA7PH6dMCNugVyXjR66XcXbwYxTh0YwI_Vsn6YJErJgKeJXJhgZrkThNUrU6Dx6bw7SC5BvlKb2rxM5HQgOnito7pp5C5f4.webp?r=659">    
+    </li>
+    <li >
+    <img class="list-image-5" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABX5wz_Ffg0LDlIyK98UGWwBwh-Hq1itcmPZR_PHt7Ky8217gPNT5cXLPOvPFwVFHfVZKJrnsjui2fENLdFW22opzS123rAkCHDjHC0PydN1myYm_ahhrQ7ZMVpdUTOh7CqhpahiXtppGM1J1rbda9GB3vSJx4Y6DQEnziYF5Mqs05Lz-CdufHLP7aVlWj1fXZlrGz44fwFJOKz2mPOYax-Bz9T690PfhNzljLM3XYxEMMWFUxybaKxxkCzT16rxyXkkXdLWEivhQzbClsvkCYsgJ0g4HxOloFqvnyknPbD0pUqqj7DmH4jOw.webp?r=425">    
+    </li>
+    <li >
+    <img class="list-image-6" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZc27F925nAMzqIHFpeJ2ajhuR2LfejQ08CxcsmgXNn94xiSV1o79--Ma2dwc5dp4ap6VUfqyEpY5aU5dRim6K7jANS89M81mAi3si9V9DLA9tBAEc1U2r8FiZcB1anlzFKXje3l7xgbi3HApyh556xBtANRutpF2mQ.webp?r=7a3">    
+    </li>
+    <li >
+    <img class="list-image-7" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdeku42_eu0RLtee0r5Azdj7nQhY-tnebPDcj95gNCTvgXArnpNLDU58UoKCCiTade3VHVEa9rYEzqGaeoo-5I2lb_rA3TjhWpv3i1D2G7tmlK0gN51DS0YATWNuAOQml_XPNbsRbPZeT7J_lZlV3MGoAI5ACPJ2XCBB3Zk2ZtSEK15BRomqVbC6Bkr395oPSefOfouqSLLuSafZYErWmKRHmS-MPQHRx2ckhNQZH8SiAfoJXAeyD7YS6KeVEjG46hAu-qDLLsztpYb4_GFlWqO36fUspwSfARKYgSbbuvw2BAGo4qSOxWHUf5qPuCAHaTj_WlOJQ4aJRUTswGo5Wa4.webp?r=339">    
+    </li>
+    <li>
+    <img  class="list-image-8" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABa94E4SB-pHqnKiyxcCrElPvEOx0NdroiEprftlPJJcQrBTC1ctHNxpXCRtcNCQWGMDjd5WXj1eC-jzGCi9mdHyc3RuEj9qfLrNtbUW4n8dA-lw2ALF7jHYIsmT-BGLuKWBnMolgkDaHIFXQD3gk_7Mw2AYKuJ5-tQoS_WPqWyDKKtJcYiWH94UfM25xp8s6nlKqiDKWQpMOz_P6JgYIGlIOb08mP_5pX4issZw_GxSXZ3urAjOWxqeg3f7gmo60GtURrG0mcLngsAW8BExX0lmfdwWN_SjkJ4bIXJXBJ6c4GEQ4XIKNIGvb.webp?r=787">    
+    </li>
+    <li >
+    <img class="list-image-9" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaPdhBjtPfy6tPcvwmXXEpYQAvrpxbVGa_lRX43GwsuN13U5tStwbhkJ0ZCZ-yFmVd44gofdJjFMSMIS-yYTTmYzh-fvkFf5DB4LGq9hhOxEbOh60N8pIh5D6VtO4b65Dvb_.webp?r=7ec">    
+    </li>
+    <li >
+    <img class="list-image-10" src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcG13pRIelXYVY0GNdMNxAtNOwicZ2IOBI6ZnfxMs4bPhyd3sIXIMGW0JZigHMXqKB1HUWoJb2yDAf45Guk9eB9dbdtATIgM1jRx5eEYFb-P2V-f6IHFQFcXGKYwEmjmpqroRkylr_ic0v_hRzQejFkxVOH7hW1p843K0CIA6RCKEc34FziUJC3oxlNm0RKtzzLSgO7mWeungF0YcnpXu087Kxbvk7L7bDNyVWV83FnOWCRI5bVApKz3ZCLvMMaiGHaSCnaqHAgrPlD7u23_j6oH_MTD7M2i5_DuRmzQ2iM21ZY-Y8lSgqDi.webp?r=02a">    
+    </li>
+    <button onclick="rightMove()" id="rightButton">></button> <!-- Right Side Button with Block Div, and Id for Css-->
+</ul> 
+</div> <!-- End of Movies Row Div-->
+
+
+<div id="center"> <!-- Making the reason section and faq Section in center for mobile-->
+<!-- Reason Container -->
+<div id="reason">
+<!-- Reason Heading -->
+    <div id="reason-heading">
+        <h2>More Reason to Join</h2>
+        <!-- Reason Boxes -->
+        <div id="reason-box">
+        <!-- Box-1 Start-->
+        <div id="box-1">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            <div id="tv-icon"> <!-- Icon start-->
+            <i class="fa-solid fa-tv fa-3x"></i>
+            </div> <!-- Icon Div end-->
+        </div> <!-- End of box-1 div-->
+
+         <!-- Box-2 Start-->
+        <div id="box-2">
+            <h2> Download your shows to watch offline</h2>
+            <p>Save your favourites easily and always have something to watch.</p> 
+            <div id="circle-down-icon">  <!-- Icon start-->
+            <i class="fa-solid fa-circle-down fa-4x"></i>   
+          </div> <!-- Icon Div end-->
+        </div> <!-- End of box-2 div-->
+
+           <!-- Box-3 Start-->
+        <div id="box-3">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            <div id="laptop-icon">  <!-- Icon start-->
+            <i class="fa-solid fa-laptop fa-4x"></i>
+        </div>  <!-- Icon Div end-->
+        </div><!-- End of box-3 div-->
+
+        <!-- Box-4 Start-->
+        <div id="box-4">
+            <h2>Create profiles for kids</h2>
+            <p> send kids on adventure with their favourite characters in a space made just for them -- free 
+                with your membership. </p>
+                <div id="child-reaching-icon"> <!-- Icon start-->
+                <i class="fa-solid fa-child-reaching fa-4x"></i>
+            </div>  <!-- Icon Div end-->
+        </div> <!-- End of box-4 div-->
+
+    </div>  <!--End of Reason Box-->
+    </div> <!--End of Reason Heading-->
+</div>  <!--End of Reason Container-->
+
+  <br>
+  <br>
+
+<!-- Faq Main Container Start -->
+<div id="container-faq">
+<!-- Faq heading -->
+ <div id="faq-container">
+    <h1>Frequently Asked Question</h1>
+    <!-- Faq Box-1 -->
+    <div class="faq">
+    <!-- Faq Question-1 -->
+    <div class="question">
+        <p>What is Netflix?</p>
+    </div> <!-- End of Question-1 -->
+    <!-- Faq Answer-1 -->
+    <div class="answer">
+        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+            <br><br>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+        </p> 
+    </div>   <!-- End of Answer-1 -->
+</div><!-- End of Faq Box-1 -->
+
+  <!-- Faq Box-2 -->
+<div class="faq">
+ <!-- Faq Question-2 -->
+    <div class="question">
+        <p>How much does Netflix Cost?</p>
+    </div>
+    <div class="answer">
+        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.   </p>
+    </div>
+</div>
+<div class="faq">
+    <div class="question">
+        <p>Where can I watch?</p>
+    </div>
+    <div class="answer">
+        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+            <br><br>
+            You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.  </p>
+    </div>
+</div>
+<div class="faq">
+    <div class="question">
+        <p>How do I cancel?</p>
+    </div>
+    <div class="answer">
+        <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.  </p>
+    </div>
+</div>
+<div class="faq">
+    <div class="question">
+        <p>Where can i watch Netflix?</p>
+    </div>
+    <div class="answer">
+        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.  </p>
+    </div>
+</div>
+<div class="faq">
+    <div class="question">
+        <p>Is Netflix good for kids?</p>
+    </div>
+    <div class="answer">
+        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+            <br><br>
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see. </p>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+    <button onclick="location.href='https:/www.netflix.com/signup?locale=en-IN'" id="restart-membership-bottom">Restart Your Membership <i class="fa-solid fa-greater-than" style="font-size: 15px; padding-left: 10px;" style="color: #ffffff;"></i></button>
+
+    
+    <div id="question-list-container">
+    <div id="question-call">
+        <p>Questions? Call <a href="example.com">000-800-919-1694</a></p>
+    
+    <div id="list-box">
+    <ul>
+        <div id="list-box-1">
+    
+        <li> <a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+        <li> <a href="https://help.netflix.com/en">Help Center</a></li>
+        <li> <a href="https://www.netflix.com/account">Account</a></li>
+        <li> <a href="https://media.netflix.com/en/">MediaCenter</a></li>
+    </div>
+    <div id="list-box-2">
+        <li> <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a></li>
+        <li> <a href="https://jobs.netflix.com/">Jobs</a></li>
+        <li> <a href="https://help.netflix.com/en/node/14361">Ways to Watch</a></li>
+        <li> <a href="https://help.netflix.com/legal/termsofuse">Terms of use</a></li>
+    </div>
+    <div id="list-box-3">
+        <li> <a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+        <li> <a href="#">Cookie Preferences</a></li>
+        <li> <a href="https://help.netflix.com/en/node/134094">Corporate Information</a></li>
+        <li> <a href="https://help.netflix.com/en/contactus">Contact Us</a></li>
+    </div>
+    <div id="list-box-4">
+        <li> <a href="https://fast.com/">Speed test</a></li>
+        <li> <a href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+        <li> <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></li>
+    </div>    
+    </ul>
+
+    
+
+</div>
+
+
+<div  id="select-option-bottom">
+    <select>
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Spanish</option>
+        <option>German</option>
+    </select>
+    
+    <p>Netflix India</p>
+</div>
+
+
+</div>   <!--End of Question Call-->
+
+</div>  <!--End of Question-List Container-->
+
+<br><br><br>
+
+</div>
+
+</body>
+</html>

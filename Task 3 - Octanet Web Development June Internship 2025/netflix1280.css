@@ -1,0 +1,108 @@
+@media (max-width: 1280px) {
+  
+    header {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #reason-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #box-1, #box-2, #box-3, #box-4
+    {
+        width: 38vw;
+        height: 34vh;
+    }
+
+    #tv-icon {
+
+        
+        height: 14vh;
+    }
+
+    #circle-down-icon  {
+   
+        height: 13vh;
+    }
+
+    #laptop-icon{
+      
+        height: 16vh;
+    }
+
+    #child-reaching-icon {
+    
+        height: 15vh;
+    }
+
+    
+    #list-box li {
+        padding: 6px;
+    }
+  
+    #list-box ul {
+        grid-template-columns: repeat(3, 1fr);
+       }
+    
+}
+
+@media (max-width: 800px)
+{
+
+
+    #rightButton {
+        
+        margin-left: 5px;
+    }
+    
+    #reason-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #box-1, #box-2, #box-3, #box-4
+    {
+        width: 80vw;
+        height: 30vh;
+    }
+
+
+    #tv-icon {
+
+        
+        height: 13vh;
+    }
+
+    #circle-down-icon  {
+   
+        height: 14vh;
+    }
+
+    #laptop-icon{
+      
+        height: 14vh;
+    }
+
+    #child-reaching-icon {
+    
+        height: 13vh;
+        margin-top: 0;
+    }
+   
+
+    #list-box ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+       }
+
+       #list-box li {
+        padding: 5px;
+       }
+
+
+
+}
+
+

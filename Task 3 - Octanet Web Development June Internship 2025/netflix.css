@@ -1,0 +1,404 @@
+
+
+body {
+    background-color: black;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.784), rgba(0, 0, 0, 0.697)),
+    url('https://assets.nflxext.com/ffe/siteui/vlv3/74d734ca-0eab-4cd9-871f-bca01823d872/web/IN-en-20241021-TRIFECTA-perspective_2277eb50-9da3-4fdf-adbe-74db0e9ee2cf_medium.jpg');
+    background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid red;
+    height: 110vh;
+    margin-bottom: 50px;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+nav img {
+    width: 10vw;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+
+#select-option {
+    margin-right: 9vw;
+    margin-top: 20px;
+}
+
+nav select {
+    margin-right: 7px;
+    padding: 5px 10px;
+    padding-right: 60px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    color: white; /* Text color to make it readable */
+}
+
+nav select option {
+    background-color: white;
+    color: black;
+}
+
+nav button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(232, 4, 4);
+    color: white; font-weight: 600;
+    border-color: transparent;
+    cursor: pointer;
+} nav button:hover { background-color: rgb(203, 3, 3); }
+
+
+
+#shows {
+    margin-top: 215px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    color: white;
+}
+
+#shows h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+#starts {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#restart-membership button{
+    color: white;
+    background-color: rgb(215, 3, 3);
+    font-size: 25px;
+    padding: 13px 23px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+} #restart-membership button:hover { background-color: rgb(197, 1, 1); } 
+
+
+#restart-membership {
+    text-align: center;
+}
+
+
+#trending {
+    color: white;
+    margin-left: 50px;
+}
+
+#trending-box{
+    /* border: 2px solid transparent; */
+    height: 5vh;
+    width: 80vw;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; */
+}
+
+#trending select {
+    margin-left: 35px;
+    padding: 5px;
+    padding-right: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 17px;
+    background-color: rgb(16, 16, 16); /* Black with 50% transparency */
+    color: white; /* Text color to make it readable */
+}
+
+
+#images {
+    overflow-x: scroll;
+    margin-right: 60px;
+}
+
+#images::-webkit-scrollbar {
+    display: none;
+}
+
+
+#images ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+ 
+}
+
+#images ul img {
+    border-radius: 10px;
+    transition: 0.5s;
+} #images ul img:hover { transform: scale(1.1); }
+
+.list-image-1,  .list-image-2,  .list-image-3,  .list-image-4,  .list-image-5, 
+.list-image-6,  .list-image-7,  .list-image-8,  .list-image-9,  .list-image-10
+{
+    width: 180px;
+    height: 240px;
+}
+
+
+#leftButton {
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 50px;
+    
+}
+
+#rightButton {
+    position: absolute;
+    left: 95%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#leftButton,#rightButton {
+    padding: 50px 5px;
+    font-weight: bold;
+    font-size: 20px ;
+    background-color: rgb(29, 28, 28);
+    border-color: transparent;
+    color: rgb(203, 203, 203);
+    border-radius: 7px;
+    cursor: pointer;
+   
+}
+
+#leftButton:hover,#rightButton:hover {
+    background-color:  rgb(58, 57, 57);
+    color: rgb(225, 225, 225);
+}
+
+
+#reason {
+    display: flex;
+   justify-content: center;
+    margin-top: 10px;
+}
+
+#reason-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    
+}
+
+#tv-icon {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: cover;
+    height: 13vh;
+}
+
+.fa-tv {
+    cursor: pointer;
+    color: pink;
+} i.fa-solid:hover {color: rgb(251, 113, 152);} 
+
+#circle-down-icon {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: cover;
+    height: 12vh;
+}
+
+.fa-circle-down {
+    cursor: pointer;
+    color: pink;
+}  i.fa-solid:hover {color: rgb(251, 113, 152);} 
+
+#laptop-icon {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: cover;
+    height: 13vh;
+}
+
+.fa-laptop {
+    cursor: pointer;
+    color: pink;
+}  i.fa-solid:hover {color: rgb(251, 113, 152);} 
+
+#child-reaching-icon {
+    margin-top: -1vw;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: cover;
+}
+
+.fa-child-reaching {
+    cursor: pointer;
+    color: pink;
+}  i.fa-solid:hover {color: rgb(251, 113, 152);} 
+
+#box-1, #box-2, #box-3, #box-4 {
+    border: 2px solid none;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 255, 0.196), rgba(128, 0, 128, 0.39) );
+}
+
+#box-1 p, #box-2 p, #box-3 p, #box-4 p {
+    font-size: 1rem;
+    color: rgb(150, 149, 149);
+    font-weight: 500;
+}
+
+
+
+#container-faq {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto ;
+}
+
+#faq-container {
+    width: 80vw;
+}
+
+#faq-container h1 {
+    font-size: 1.5rem;
+}
+
+#faq-list {
+    margin-top: 20px;
+}
+
+.question  {
+    padding: 5px 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 8px;
+    background-color: rgb(52, 52, 52);
+    cursor: pointer;
+} .question:hover {background-color: rgb(78, 78, 78) ;}
+
+.answer {
+    padding: 10px 30px;
+    font-size: 23px;
+    font-weight: 450;
+      background-color: rgb(50, 50, 50);
+      display: none;
+      margin-top: 2px;
+}
+
+
+ .active.active {
+    display: block;
+ }
+
+
+ #restart-membership-bottom {
+    color: white;
+    background-color: rgb(215, 3, 3);
+    padding: 13px 23px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+} #restart-membership-bottom button:hover { background-color: rgb(197, 1, 1); } 
+
+
+#restart-membership-bottom {
+    font-size: 25px;
+    margin-left: 9vw;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+}
+
+
+#question-call, #question-call a {
+    color: rgba(159, 159, 159, 0.918);
+    font-weight: 500;
+}
+ 
+#question-list-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+ #list-box ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+        list-style: none;
+        padding: 0;
+ }
+
+
+
+#list-box-1, #list-box-2, #list-box-3, #list-box-4 {
+    width: 250px;
+    height: 25vh;
+    border: 2px solid none;
+
+
+}
+
+#list-box li {
+    padding:10px ;
+}
+
+
+ #list-box li a {
+font-weight: 400;
+    color: rgba(159, 159, 159, 0.918);
+    padding-right: 20px;
+ }
+
+
+
+ #select-option-bottom select {
+    margin-left: 0;
+    margin-right: 7px;
+    padding: 5px 10px;
+    padding-right: 90px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    color: white; /* Text color to make it readable */
+
+ }
+
+#select-option-bottom select option {
+    background-color: white;
+    color: black;
+}
+
+
